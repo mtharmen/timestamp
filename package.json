@@ -1,0 +1,27 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "description": "Time Converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhinthan Tharmendran",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtharmen/timestamp.git"
+  },
+  "keywords": [
+    "timestamp",
+    "unix"
+  ],
+  "bugs": {
+    "url": "https://github.com/mtharmen/timestamp/issues"
+  },
+  "homepage": "https://github.com/mtharmen/timestamp#readme"
+}
