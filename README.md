@@ -7,8 +7,8 @@
 
 ### Example usage:
 ```text
-https://timestamp-ms.herokuapp.com/September%209,%201999
-https://timestamp-ms.herokuapp.com/936835200
+https://mtharmen-timestamp.herokuapp.com/September%209,%201999
+https://mtharmen-timestamp.herokuapp.com/936835200
 ```
 
 ### Example output:
