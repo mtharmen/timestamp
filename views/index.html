@@ -1,0 +1,36 @@
+<html lang="en">
+    <head>
+        <title>mtharmen Timestamp Microservice</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">
+                API Basejump: Timestamp Microservice
+            </h1>
+            <blockquote>
+                <h2>User stories:</h2>
+                <ol>
+                    <li>The API endpoint is <code>GET [project_url]/api/timestamp/:date_string?</code></li>
+                    <li>A date string is valid if can be successfully parsed by <code>new Date(date_string)</code>.
+                        Note that the unix timestamp needs to be an <strong>integer</strong> (not a string) specifying <strong>milliseconds</strong>.
+                        In our test we will use date strings compliant with ISO-8601 (e.g. "2016-11-20") because this will ensure an UTC timestamp.</li>
+                    <li>If the date string is <strong>empty</strong> it should be equivalent to trigger <code>new Date()</code>, i.e. the service uses the current timestamp.</li>
+                    <li>If the date string is valid the api returns a JSON having the structure<br />
+                        <code>{"unix": &ltdate.getTime()&gt, "utc" : &ltdate.toUTCString()&gt }
+                        e.g. {"unix": 936835200 ,"utc": "Thu, 09 Sep 1999 00:00:00 GMT"}</code></li>
+                    <li>If the date string is invalid the api returns a JSON having the structure <br/ >
+                        <code>{"error" : "Invalid Date" }</code>.</li>
+                </ol>
+                <h3>Example usage:</h3>
+                <a href="https://fascinated-penalty.glitch.me/api/timestamp/1999-09-09" target="_blank">/api/timestamp/1999-09-09</a><br>
+                <a href="https://fascinated-penalty.glitch.me/api/timestamp/936835200" target="_blank">/api/timestamp/936835200</a>
+                <h3>Example output:</h3>
+                <code>
+                    { "unix": 936835200, "utc": "Thu, 09 Sep 1999 00:00:00 GMT" }
+                </code>
+            </blockquote>
+            <br />
+            <div><a href="https://github.com/mtharmen/timestamp" target="_blank">Github Source</a></div>
+        </div>
+    </body>
+</html>
